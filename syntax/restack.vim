@@ -33,7 +33,7 @@ highlight link restackBlockComment Comment
 syntax match restackMacro "\v\@[^ \n]+"
 highlight link restackMacro Macro
 
-syntax match restackNumber "\v\d+"
+syntax match restackNumber "\v-?\d*(\.?\d+)"
 highlight link restackNumber Number
 
 syntax region restackString start=/\v"/ skip=/\v\\./ end=/\v"/
