@@ -27,6 +27,9 @@ highlight link restackBlock Operator
 syntax match restackComment "\v--.*$"
 highlight link restackComment Comment
 
+syntax region restackBlockComment start=/\v---/ skip=/\v\\./ end=/\v---/
+highlight link restackBlockComment Comment
+
 syntax match restackMacro "\v\@[^ \n]+"
 highlight link restackMacro Macro
 
